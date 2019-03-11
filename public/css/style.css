@@ -1,0 +1,99 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+ @font-face {
+  font-family: 'ROCKET TO MARS';
+  src: url('ROCKETTOMARS.woff2') format('woff2'),
+      url('ROCKETTOMARS.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+nav ul a,
+nav .brand-logo {
+  color:#212121;
+}
+.bold {
+  font-weight: bold;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 280px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+  font-family: 'Leckerli One', cursive;
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+  #short{min-height: 250px;}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+.brand-logo{
+font-family: 'ROCKET TO MARS';
+color:#212121;
+}
+#eng{
+  font-family: 'Leckerli One', cursive;
+}
+#bold{
+  font-weight: bold;
+}
+#teal{
+  color: teal;
+}
+#download-button{
+  font-family: 'Leckerli One', cursive;
+}
+#border{text-shadow: -1.6px 0#212121, 0 1.6px#212121, 1.6px 0#212121, 0 -1.6px#212121;}
+#borderfont{
+  font-family: 'ROCKET TO MARS';
+  text-shadow: -1.6.6px 0#212121, 0 1.6px#212121, 1.6px 0#212121, 0 -1.6px#212121;}
+  .navbar-fixed {
+    z-index:9999;
+    }
+.parallax-container .parallax img{
+  display: inherit;
+}
+#about{
+  font-family: 'ROCKET TO MARS';
+color:#212121;
+}
