@@ -5,7 +5,7 @@ module.exports = {
     username: "root",
     // make sure to set this env variable in your .env file
     password: process.env.LOCAL_MYSQL_PASSWORD,
-    database: "jawn_it",
+    database: "sandbox_jawn",
     host: "localhost",
     dialect: "mysql"
   },
