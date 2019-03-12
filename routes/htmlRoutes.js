@@ -9,7 +9,7 @@ function callNewsApi(param) {
     // change this vvvvv to allow "param" to pick what info we send to screen
     "https://newsapi.org/v2/top-headlines?" +
       param +
-      "country=us&apiKey=481b5e898fd742f08451f15c0006bbdd"
+      "country=us&apiKey=2aaed0c5bb03463c9a8487a1ec3ee5f1"
   );
 }
 
@@ -17,7 +17,7 @@ module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
     // this uses the function to pick which article topic
-    callNewsApi("q=technology&")
+    callNewsApi("category=technology&")
       .then(function(response) {
         console.log(response);
         // This is the code Quincy showed me
