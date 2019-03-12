@@ -9,7 +9,7 @@ function callNewsApi(param) {
     // change this vvvvv to allow "param" to pick what info we send to screen
     "https://newsapi.org/v2/top-headlines?" +
       param +
-      "country=us&apiKey=481b5e898fd742f08451f15c0006bbdd2345"
+      "country=us&apiKey=481b5e898fd742f08451f15c0006bbdd"
   );
 }
 
@@ -21,16 +21,10 @@ module.exports = function(app) {
       .then(function(response) {
         console.log(response);
         // This is the code Quincy showed me
-        // res.render("index", {
-        //   data: response,
-        //   error: false
-        // });
-        var dataObj = {
-          data: response
-          // error: false
-        };
-        console.log(dataObj);
-        res.render("index", dataObj);
+        res.render("index", {
+          data: response,
+          error: false
+        });
       })
       .catch(function(error) {
         console.log(error);
