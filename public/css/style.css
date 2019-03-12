@@ -97,3 +97,8 @@ color:#212121;
   font-family: 'ROCKET TO MARS';
 color:#212121;
 }
+.card {
+  max-width: 410px; 
+  max-height: 510px;
+  margin: 28px 5px 28px 5px;
+  }
