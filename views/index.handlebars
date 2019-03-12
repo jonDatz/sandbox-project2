@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jawn It!</title>
 
   <!-- CSS  -->
-  
-  <link href="https://fonts.googleapis.com/css?family=Faster+One|Leckerli+One|Permanent+Marker|Schoolbell" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Faster+One|Leckerli+One|Permanent+Marker|Schoolbell"
+    rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
+
 <body>
-    <div class="navbar-fixed">
+  <div class="navbar-fixed">
     <nav class="white" role="navigation">
-        <div class="nav-wrapper container">
-          <a id="logo-container" href="#" class="brand-logo">Jawn It!</a>
-          <ul class="right hide-on-med-and-down">
-            <li class="bold"><a href="#">View All</a></li>
-        <li><a href="#">Food</a></li>
-        <li><a href="#">Technology</a></li>
-        <li><a href="#">Sports</a></li>
-        <li><a href="#">Politics</a></li>
-        <li><a href="#">Fashion</a></li>
-        <li><a href="#">Gaming</a></li>
-          </ul>
-    
-          <ul id="nav-mobile" class="sidenav">
-            <li class="bold"><a href="#">View All</a></li>
-        <li><a href="#">Food</a></li>
-        <li><a href="#">Technology</a></li>
-        <li><a href="#">Sports</a></li>
-        <li><a href="#">Politics</a></li>
-        <li><a href="#">Fashion</a></li>
-        <li><a href="#">Gaming</a></li>
-          </ul>
-          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        </div>
-      </nav>
-    </div>
-</div>
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">Jawn It!</a>
+        <ul class="right hide-on-med-and-down">
+          <li class="bold"><a href="#">View All</a></li>
+          <li><a href="#">Food</a></li>
+          <li><a href="#">Technology</a></li>
+          <li><a href="#">Sports</a></li>
+          <li><a href="#">Politics</a></li>
+          <li><a href="#">Fashion</a></li>
+          <li><a href="#">Gaming</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="sidenav">
+          <li class="bold"><a href="#">View All</a></li>
+          <li><a href="#">Food</a></li>
+          <li><a href="#">Technology</a></li>
+          <li><a href="#">Sports</a></li>
+          <li><a href="#">Politics</a></li>
+          <li><a href="#">Fashion</a></li>
+          <li><a href="#">Gaming</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </div>
+  </div>
   <div id="index-banner" class="parallax-container valign-wrapper" id="short">
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-      
+
         <h3 class="header center white-text" id="border">Stay Connected, Stay Informed</h3>
-  
+
 
 
       </div>
@@ -59,197 +62,92 @@
   <div class="container">
     <div class="section">
 
-      <!--   Icon Section   -->
-      <div class="row">
-          <div class="col s12 m4">
-              <div class="card">
-                <div class="card-image">
-                  <img src="images/sample-1.jpg">
-                  <span class="card-title">Card Title</span>
-                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-                </div>
-                <div class="card-content">
-                  <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                </div>
-              </div>
-            </div>
-                      
+      <!--   Material card Section   -->
 
-            <div class="col s12 m4">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="images/sample-1.jpg">
-                    <span class="card-title">Card Title</span>
-                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-                  </div>
-                  <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                  </div>
-                </div>
-              </div>
+      {{#each data.data.articles}}
+        {{> posts/post-block}}
+      {{/each}}
 
-              <div class="col s12 m4">
-                  <div class="card">
-                    <div class="card-image">
-                      <img src="images/sample-1.jpg">
-                      <span class="card-title">Card Title</span>
-                      <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-                    </div>
-                    <div class="card-content">
-                      <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                    </div>
-                  </div>
-                </div>
     </div>
-  </div>
-
-  <div class="row">
-      <div class="col s12 m4">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/sample-1.jpg">
-              <span class="card-title">Card Title</span>
-              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-            </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+      <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+          <div class="container">
+            <div class="row center">
+              <h4 class="header col s12 white-text " id="border">Check back with us regularly for new and exciting
+                content!</h4>
             </div>
           </div>
         </div>
-                  
-
-        <div class="col s12 m4">
-            <div class="card">
-              <div class="card-image">
-                <img src="images/sample-1.jpg">
-                <span class="card-title">Card Title</span>
-                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-              </div>
-              <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 m4">
-              <div class="card">
-                <div class="card-image">
-                  <img src="images/sample-1.jpg">
-                  <span class="card-title">Card Title</span>
-                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-                </div>
-                <div class="card-content">
-                  <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                </div>
-              </div>
-            </div>
-
-</div>
-<div class="row">
-    <div class="col s12 m4">
-        <div class="card">
-          <div class="card-image">
-            <img src="images/sample-1.jpg">
-            <span class="card-title">Card Title</span>
-            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-          </div>
-          <div class="card-content">
-            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-          </div>
-        </div>
+        <div class="parallax"><img src="images/background2.jpg" alt="Unsplashed background img 3"></div>
       </div>
-                
 
-      <div class="col s12 m4">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/sample-1.jpg">
-              <span class="card-title">Card Title</span>
-              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-            </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-            <div class="card">
-              <div class="card-image">
-                <img src="images/sample-1.jpg">
-                <span class="card-title">Card Title</span>
-                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-              </div>
-              <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-              </div>
-            </div>
-          </div>
-
-</div>
-</div>
-
- 
-<div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
       <div class="container">
-        <div class="row center">
-          <h4 class="header col s12 white-text " id="border">Check back with us regularly for new and exciting content!</h4>
+        <div class="section">
+
+          <div class="row">
+            <div class="col s12 center">
+              <h3><i class="mdi-content-send brown-text"></i></h3>
+              <h4 id="about">About Jawn It!</h4>
+              <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id
+                nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut
+                ultricies
+                eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et
+                pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus
+                sed.
+                Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat.
+                Nullam
+                eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et
+                ultrices posuere cubilia Curae;</p>
+            </div>
+          </div>
+
         </div>
       </div>
-    </div>
-    <div class="parallax"><img src="images/background2.jpg" alt="Unsplashed background img 3"></div>
-  </div>
 
-  <div class="container">
-    <div class="section">
 
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4 id="about">About Jawn It!</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+
+      <footer class="page-footer grey lighten-5">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="teal-text" id="eng">Company Bio</h5>
+              <p class="grey-text text-darken-4" id="teal">We are a team of full stack developers working on this
+                project
+                like it's our full time job. Special Thanks to all the people that helped us on this one. You know who
+                you
+                are!</p>
+
+
+            </div>
+
+
+            <div class="col l3 s12">
+              <h5 class="teal-text" id="eng">Our Engineers</h5>
+              <ul>
+                <li><a class="grey-text text-darken-4" href="https://github.com/jonDatz" target="_blank">Jonathan
+                    Datz</a>
+                </li>
+                <li><a class="grey-text text-darken-4" href="https://github.com/cesarmarroquin22" target="_blank">Cesar
+                    Marroquin</a></li>
+                <li><a class="grey-text text-darken-4" href="https://github.com/mpduffy82" target="_blank">Mykola
+                    Duffy</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
-
-    </div>
-  </div>
-
-
-
-  <footer class="page-footer grey lighten-5">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="teal-text" id="eng">Company Bio</h5>
-          <p class="grey-text text-darken-4" id="teal">We are a team of full stack developers working on this project like it's our full time job. Special Thanks to all the people that helped us on this one. You know who you are!</p>
-
-
-       </div>
-       
-
-        <div class="col l3 s12">
-          <h5 class="teal-text" id="eng">Our Engineers</h5>
-          <ul>
-            <li><a class="grey-text text-darken-4" href="https://github.com/jonDatz" target="_blank">Jonathan Datz</a></li>
-            <li><a class="grey-text text-darken-4" href="https://github.com/cesarmarroquin22" target="_blank">Cesar Marroquin</a></li>
-            <li><a class="grey-text text-darken-4" href="https://github.com/mpduffy82" target="_blank">Mykola Duffy</a></li>
-          </ul>
+        <div class="footer-copyright">
+          <div class="container">
+            Made with <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made with <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-      </div>
-    </div>
-  </footer>
+      </footer>
 
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+      <!--  Scripts-->
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="js/materialize.js"></script>
+      <script src="js/init.js"></script>
 
-  </body>
+</body>
+
 </html>
