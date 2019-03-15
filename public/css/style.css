@@ -86,8 +86,8 @@ color:#212121;
 #border{text-shadow: -1.6px 0#212121, 0 1.6px#212121, 1.6px 0#212121, 0 -1.6px#212121;}
 #borderfont{
   font-family: 'ROCKET TO MARS';
-  text-shadow: -1.6.6px 0#212121, 0 1.6px#212121, 1.6px 0#212121, 0 -1.6px#212121;}
-  .navbar-fixed {
+  text-shadow: -1.6px 0#212121, 0 1.6px#212121, 1.6px 0#212121, 0 -1.6px#212121;}
+.navbar-fixed {
     z-index:9999;
     }
 .parallax-container .parallax img{
@@ -98,7 +98,9 @@ color:#212121;
 color:#212121;
 }
 .card {
-  max-width: 410px; 
-  max-height: inherit;
   margin: 28px 5px 28px 5px;
   }
+ 
+.card-title{
+  font-family: 'Leckerli One', cursive;
+  text-shadow: -1.6px 0#212121, 0 1.6px#212121, 1.6px 0#212121, 0 -1.6px#212121;}

@@ -1,15 +1,18 @@
-<div class="col s4 m4">
-    <div class="card">
+
+
+<div class="col s12 m6 l4">
+    <div class="card medium z-depth-5">
         <div class="card-image">
             <img src="{{urlToImage}}">
             <span class="card-title">{{source.name}}</span>
-            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+            {{!-- <a class="btn-floating halfway-fab waves-effect waves-light red pulse"><i class="material-icons">add</i></a> --}}
         </div>
         <div class="card-content">
             <p>{{title}}</p>
         </div>
         <div class="card-action">
-            <a href={{url}} target="_blank">This is a link</a>
+            <a class="waves-effect waves-light btn-small white black-text"href={{url}} target="_blank">View Jawn!</a><a class="waves-effect waves-light btn-small white-text"href="#" target="_blank">Save Jawn!</a>
         </div>
+        
     </div>
 </div>

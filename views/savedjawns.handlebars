@@ -4,12 +4,11 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Jawn It!</title>
+  <title>Jawn It! Saved Jawns</title>
 
   <!-- CSS  -->
 
-  <link href="https://fonts.googleapis.com/css?family=Faster+One|Leckerli+One|Permanent+Marker|Schoolbell"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Faster+One|Leckerli+One|Permanent+Marker|Schoolbell" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
@@ -21,26 +20,25 @@
       <div class="nav-wrapper container">
         <a id="logo-container" href="#" class="brand-logo">Jawn It!</a>
         <ul class="right hide-on-med-and-down">
-          <li class="bold"><a href="#" id="topStories">View All</a></li>{{!-- wtf do i do here?   --}}
-          <li><a href="#" id="food">Food</a></li>{{!-- everything?q=cooking&language=en  --}}
-          <li><a href="#" id="technology">Technology</a></li>{{!-- everything?category=technology&language=en --}}
-          <li><a href="#" id="sports">Sports</a></li>{{!--  everything?category=sports&language=en --}}
-          <li><a href="#" id="politics">Politics</a></li>{{!-- everything?q=politics&language=en  --}}
-          <li><a href="#" id="fashion">Fashion</a></li>{{!-- everything?q=fashion&language=en  --}}
-          <li><a href="#" id="gaming">Gaming</a></li>{{!-- everything?q=gaming&language=en  --}}
-          <a class="waves-effect waves-light btn-small"><i class="material-icons right">cake</i>Saved Jawns</a>
+          <li class="bold"><a href="#">View All</a></li>
+          <li><a href="#">Food</a></li>
+          <li><a href="#">Technology</a></li>
+          <li><a href="#">Sports</a></li>
+          <li><a href="#">Politics</a></li>
+          <li><a href="#">Fashion</a></li>
+          <li><a href="#">Gaming</a></li>
+          <!-- <a class="waves-effect waves-light btn-small"><i class="material-icons right">cloud</i>Saved Articles</a> -->
         </ul>
 
         <ul id="nav-mobile" class="sidenav">
           <li class="bold"><a href="#">View All</a></li>
-          <li><a href="#" id="food">Food</a></li>
-          <li><a href="#" id="technology">Technology</a></li>
-          <li><a href="#" id="sports">Sports</a></li>
-          <li><a href="#" id="politics">Politics</a></li>
-          <li><a href="#" id="fashion">Fashion</a></li>
-          <li><a href="#" id="gaming">Gaming</a></li>
-          <a class="waves-effect waves-light btn-small"><i class="material-icons right">cake</i>Saved
-            Jawns</a>
+          <li><a href="#">Food</a></li>
+          <li><a href="#">Technology</a></li>
+          <li><a href="#">Sports</a></li>
+          <li><a href="#">Politics</a></li>
+          <li><a href="#">Fashion</a></li>
+          <li><a href="#">Gaming</a></li>
+          <!-- <a class="waves-effect waves-light btn-small"><i class="material-icons right">cloud</i>Saved Articles</a> -->
         </ul>
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       </div>
@@ -51,7 +49,7 @@
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h3 class="header center white-text" id="border">Stay Connected, Stay Informed</h3>
+        <h3 class="header center white-text" id="border">Your Saved Jawns</h3>
       </div>
     </div>
     <div class="parallax"><img src="images/background1.jpg" alt="Unsplashed background img 1"></div>
@@ -60,11 +58,24 @@
 
   <div class="container">
     <div class="section">
-      <div class="row">
-        {{#each data.data.articles}}
-        {{> posts/post-block}}
-        {{/each}}
-      </div>
+     <!-- INSERT ARTICLES HERE -->
+    <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/sample-1.jpg">
+              <span class="card-title">Card Title</span>
+              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I
+                require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+
     </div>
   </div>
 
@@ -73,8 +84,7 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h4 class="header col s12 white-text " id="border">Check back with us regularly for new and exciting content!
-          </h4>
+          <h4 class="header col s12 white-text " id="border">Check back with us regularly for new and exciting content!</h4>
         </div>
       </div>
     </div>
@@ -119,12 +129,10 @@
         <div class="col l3 s12">
           <h5 class="teal-text" id="eng">Our Engineers</h5>
           <ul>
-            <li><a class="grey-text text-darken-4" href="https://github.com/jonDatz" target="_blank">Jonathan Datz</a>
-            </li>
+            <li><a class="grey-text text-darken-4" href="https://github.com/jonDatz" target="_blank">Jonathan Datz</a></li>
             <li><a class="grey-text text-darken-4" href="https://github.com/cesarmarroquin22" target="_blank">Cesar
                 Marroquin</a></li>
-            <li><a class="grey-text text-darken-4" href="https://github.com/mpduffy82" target="_blank">Mykola Duffy</a>
-            </li>
+            <li><a class="grey-text text-darken-4" href="https://github.com/mpduffy82" target="_blank">Mykola Duffy</a></li>
           </ul>
         </div>
       </div>
@@ -136,62 +144,6 @@
     </div>
   </footer>
 
-
-  <script>
-    $(document).ready(function () {
-
-      $("#food").on("click", function () {
-        console.log("food clicked");
-        $.get("api/food", function () {
-          param = "everything?q=cooking&language=en";
-          callNewsApi(param)
-            .then(function (response) {
-              console.log(response);
-              res.render("index", {
-                data: response,
-                error: false
-              });
-            })
-            .catch(function (error) {
-              console.log(error);
-              res.render("index", { error: true });
-            });
-        });
-      });
-      $("#technology").on("click", function () {
-        console.log("tech clicked");
-        var param = "everything?category=technology&language=en";
-      });
-      $("#sports").on("click", function () {
-        console.log("sports clicked");
-        var param = "everything?category=sports&language=en";
-      });
-      $("#politics").on("click", function () {
-        console.log("politics clicked");
-        var param = "everything?q=politics&language=en"
-      });
-      $("#fashion").on("click", function () {
-        console.log("fashion clicked");
-        $.get("")
-      });
-      $("#gaming").on("click", function () {
-        console.log("gaming clicked");
-        $.get("")
-      });
-      $("#topStories").on("click", function () {
-        console.log("top stories clicked");
-        $.get("")
-      });
-
-
-
-    });
-  //  $.get get the
-
-
-  // add $.done to load the page with the new info
-
-  </script>
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
